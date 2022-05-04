@@ -7,12 +7,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="/js/test.react.js" async></script>
+    <style>
+        picture {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            width: 100px;
+            margin-bottom: 10px;
+        }
+
+        img {
+            border-radius: 50%;
+            margin-bottom: 10px;
+            box-shadow: 0 0 15px #555;
+            /* width: 20px; */
+        }
+
+        img.disabled {
+            opacity: 0.3;
+        }
+    </style>
 </head>
 
 <body>
-    <!-- <div id="root"> -->
-    <!-- This element's contents will be replaced with your component. -->
-    <!-- </div> -->
+    <h1>Bienvenido leio</h1>
+    <picture>
+        <img src="http://placekitten.com/200/200" alt="img">
+        gatito
+    </picture>
+    <!-- Creo el elemetno div con id root  -->
+    <div id='root'></div>
+    <script>
+        //traigo elemento div de id root
+        const root = document.getElementById('root')
+        console.log(root)
+        //creo una funcion que me retorna un string que voy a poder insertar en el html
+        const avatar = (parametro) => {
+            //paso el parametro.id para identificar la llamada por inerHTML
+            const link = `http://placekitten.com/200/${parametro.id}200/`
+            //parametro.name para traer por inerHTML los diferentes nombres indicados al html
+            return `<picture>
+        <img src='${link}' alt="img" alt ='img'>
+        ${parametro.name}
+    </picture>`
+        }
+
+
+        //llamadas de las diferentes imagenes por id y le designamos nombre 
+        root.innerHTML = avatar({ id: 1, name: 'seba' })
+        root.innerHTML += avatar({ id: 2, name: 'pepe' })
+        root.innerHTML += avatar({ id: 3, name: 'juan' })
+        //selecciono todas las imagenes con 'queryselectorAll' y por cada uno 
+        root.querySelectorAll('img').forEach(img => {
+            //por el metodo 'foreach' agrego un 'eventlistener' para escuchar el click del usuario
+            img.addEventListener('click', () => {
+                //cada vez que se haga click se ejecuta la funcion de cambiar clase 
+                img.classList.toggle('disabled')
+            })
+
+        })
+        //esto es un metodo imperativo porque tengo que indicar paso a paso que tiene
+        //que pasar con el doogism
+
+
+    </script>
 
 
 </body>
