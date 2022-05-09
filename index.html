@@ -27,6 +27,9 @@
             opacity: 0.3;
         }
     </style>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 </head>
 
 <body>
@@ -77,24 +80,24 @@
         //
         // FIN DE TOMA DE NOTA
 
-        // EJEMPLO DE USO DE REACT 
+        // EJEMPLO DE USO DE REACT
 
-        //Imaginar que tenemos 2 librerias linkeadas
-        //creamos la funcion r con la propiedad de las librerias react.createElement
+        //// Imaginar que tenemos 2 librerias linkeadas
+        //// creamos la funcion r con la propiedad de las librerias react.createElement
         const r = React.createElement
 
-        const Avatar = () => {
-            const src = `link`
+        // const Avatar = () => {
+        //     const src = `link`
 
-            // La libreria uno tiene la funcion  de pasar 3 parametros, imagen, atributos de la imagen, y por 3er parametro todos los elementos hijos y al final el nombre
+        //     // La libreria uno tiene la funcion  de pasar 3 parametros, imagen, atributos de la imagen, y por 3er parametro todos los elementos hijos y al final el nombre
 
-            return r('picture', {}, [r('img', { src, alt: 'imagen 1' }), 'nombre'])
-        }
-        //funciona como innerHTML Rrender() por libreria 2
-        ReactDOM.render(r(Avatar), root)
+        //     return r('picture', {}, [r('img', { src, alt: 'imagen 1' }), 'nombre'])
+        // }
+        // //funciona como innerHTML Rrender() por libreria 2
+        // ReactDOM.render(r(Avatar), root)
 
         const AvatarJSX = () => {
-            const src = `link`
+            const src = `http://placekitten.com/200/200/`
 
             // La libreria uno tiene la funcion  de pasar 3 parametros, imagen, atributos de la imagen, y por 3er parametro todos los elementos hijos y al final el nombre
 
@@ -107,6 +110,7 @@
             )
         }
 
+        // FIN DE TOMA DE NOTA 
 
 
 
