@@ -21,11 +21,11 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <NavBar />
         {/* <img src={logo} className="App-logo" alt="logo" />  */}
         <h1 style={{ color: 'yellow', marginBottom: '3%' }} onClick={() => console.log('hice click')}>MERCADO LIBRE</h1>
-        <NavBar />
-        <AvatarJSX id={2} name="gato" />
-        <AvatarJSX id={5} name="pepe" />
+        {/* <AvatarJSX id={2} name="gato" />
+        <AvatarJSX id={5} name="pepe" /> */}
       </header>
     </div>
   );
