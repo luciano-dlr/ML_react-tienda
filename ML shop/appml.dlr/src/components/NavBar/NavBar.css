@@ -1,0 +1,23 @@
+h1 {
+    padding: 1px;
+    color: yellow;
+    background-color: gray;
+    border-radius: 10px;
+
+
+}
+
+.btns_NavBar {
+    background-color: white;
+    padding: 5%;
+    margin-bottom: 10%;
+    gap: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+button {
+    background-color: yellow;
+}

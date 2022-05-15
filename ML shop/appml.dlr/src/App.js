@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import NavBar from './components/NavBar/NavBar';
 
 const AvatarJSX = (props) => {
   const src = `http://placekitten.com/200/${props.id}200/`
@@ -20,20 +21,11 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        {/* <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p> */}
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        {/* <img src={logo} className="App-logo" alt="logo" />  */}
+        <h1 style={{ color: 'yellow', marginBottom: '3%' }} onClick={() => console.log('hice click')}>MERCADO LIBRE</h1>
+        <NavBar />
         <AvatarJSX id={2} name="gato" />
-        <AvatarJSX id={5} name="alejandro" />
+        <AvatarJSX id={5} name="pepe" />
       </header>
     </div>
   );
