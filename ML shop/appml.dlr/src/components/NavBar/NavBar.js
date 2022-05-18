@@ -1,20 +1,20 @@
 import './NavBar.css'
 
-const NavBar = () => {
+const NavBar = ({ boton1, boton2, boton3, boton4 }) => {
 
     return (
         <ul class="nav justify-content-center justify-item-spo">
             <li class="nav-item">
-                <a class="nav-link btn btn-outline-dark">Categoria</a>
+                <a class="nav-link btn btn-outline-dark">{boton1}</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link btn btn-outline-dark">Historial</a>
+                <a class="nav-link btn btn-outline-dark">{boton2}</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link btn btn-outline-dark">Compra</a>
+                <a class="nav-link btn btn-outline-dark">{boton3}</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link btn btn-outline-dark">Ofertas</a>
+                <a class="nav-link btn btn-outline-dark">{boton4}</a>
             </li>
         </ul>
     )

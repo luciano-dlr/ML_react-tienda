@@ -1,0 +1,15 @@
+img {
+    display: flex;
+    width: 10%;
+    background-color: yellow;
+}
+
+h2 {
+    display: flex;
+    color: black;
+    margin-left: 10%;
+}
+
+div {
+    background-color: whitesmoke;
+}
