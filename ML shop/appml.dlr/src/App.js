@@ -24,6 +24,13 @@ function App() {
     <div className="App">
       <header className="App-header">
         <NavBar boton1={'comprar'} boton2={'mi carrito'} boton3={'historial'} boton4={'categorias'} />
+
+
+
+
+
+
+        
         <ItemListContainer greeting='BIENVENIDO USUARIO' />
         <CartWidget/>
         {/* <img src={logo} className="App-logo" alt="logo" />  */}
